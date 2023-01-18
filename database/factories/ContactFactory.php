@@ -19,6 +19,7 @@ class ContactFactory extends Factory
         return [
             'name' => fake()->name(),
             'phone' => fake()->phoneNumber(),
+            'category_id'=> mt_rand(1,3),
         ];
     }
 }
